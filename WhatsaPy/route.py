@@ -11,4 +11,4 @@ def routes(app: Flask):
 
     @app.route('/', methods=["POST"])
     def hook():
-        print(request.args)
+        data = request.get_json()
